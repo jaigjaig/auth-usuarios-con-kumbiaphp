@@ -1,1 +1,8 @@
 <?php View::content() ?>
+<?php if (Auth::is_valid()): ?>
+<div style="float:right">
+	<span><b>Nombre de Usuario:</b> <?php echo Auth::get("usuario_nombre") ?></span>
+</div>
+<div style="clear:both"></div>
+<?php endif ?>
+	
